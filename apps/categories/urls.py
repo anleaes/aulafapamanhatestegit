@@ -9,6 +9,7 @@ router.register('', views.CategoryViewSet, basename='categorias')
 
 urlpatterns = [
     path('adicionar/', views.add_category, name='add_category'),
+    path('listar/', views.list_categories, name='list_categories'),
     path('', include(router.urls) )
 ]
 
